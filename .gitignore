@@ -1,88 +1,67 @@
-# ===== Visual Studio / Build =====
+####################################
+# Visual Studio / MSVC
+####################################
 .vs/
-x64/
-x86/
-Debug/
-Release/
-*.vcxproj.user
-
-# ===== CMake / build =====
-build/
-out/
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-
-# ===== Binary / Libraries =====
-
-# Visual Studio
-.vs/
-*.user
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
+*.ipch
 
-# Build outputs
+####################################
+# Build outputs (MSVC / CMake)
+####################################
 Debug/
 Release/
 x64/
 x86/
-out/
 bin/
 obj/
-*.obj
-*.pdb
-*.ilk
-*.pch
-*.idb
-*.tlog
-*.log
-
-# CMake / Ninja (있으면)
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-*.ninja
+out/
 build/
-
-# Windows / temp
-Thumbs.db
-.DS_Store
-*.tmp
-
-.vs/
-x64/
-General_*/
-
-# simulation results
-result/
-*.dat
-*.txt
-!Media.dat
-!Inc_Apply_to_*.txt
-
-# Build artifacts / binaries
 
 *.exe
 *.dll
 *.lib
 *.pdb
-
+*.ilk
 *.obj
+*.pch
+*.idb
+*.tlog
+*.log
 
-# ===== FDTD result / field data =====
-*.dat
+####################################
+# CMake / Ninja
+####################################
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+
+####################################
+# External libraries (local only)
+####################################
+rapidjsonLibrary/
+
+####################################
+# Simulation / FDTD results
+####################################
 result/
 debug*.txt
 
-# ===== OS =====
+# Field data (기본은 무시)
+*.dat
+*.txt
+
+# 예외: 반드시 추적해야 하는 입력/설정 파일
+!Media.dat
+!Inc_Apply_to_*.txt
+
+####################################
+# OS / temp files
+####################################
 Thumbs.db
 .DS_Store
-
-*.ipch
-
-# (옵션) Visual Studio intermediate
-*.obj
-*.ilk
-*.tlog
+*.tmp
