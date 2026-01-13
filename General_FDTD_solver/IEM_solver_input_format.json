@@ -1,0 +1,111 @@
+{
+    "MESH": {
+        "Voxelsize": {
+            "txsize": 80,
+            "tysize": 80,
+            "tzsize": 80
+        },
+        "CellLocation": {
+            "xcoordinate": [ -0.1, -0.095, -0.09, -0.085, -0.08, -0.075, -0.07, -0.065, -0.06, -0.055, -0.05, -0.045, -0.04, -0.035, -0.03, -0.025, -0.02, -0.015, -0.01, -0.005, 0, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.085, 0.09, 0.095, 0.1, 0.105, 0.11, 0.115, 0.12, 0.125, 0.13, 0.135, 0.14, 0.145, 0.15, 0.155, 0.16, 0.165, 0.17, 0.175, 0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.215, 0.22, 0.225, 0.23, 0.235, 0.24, 0.245, 0.25, 0.255, 0.26, 0.265, 0.27, 0.275, 0.28, 0.285, 0.29, 0.295, 0.3 ],
+            "ycoordinate": [ -0.1, -0.095, -0.09, -0.085, -0.08, -0.075, -0.07, -0.065, -0.06, -0.055, -0.05, -0.045, -0.04, -0.035, -0.03, -0.025, -0.02, -0.015, -0.01, -0.005, 0, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.085, 0.09, 0.095, 0.1, 0.105, 0.11, 0.115, 0.12, 0.125, 0.13, 0.135, 0.14, 0.145, 0.15, 0.155, 0.16, 0.165, 0.17, 0.175, 0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.215, 0.22, 0.225, 0.23, 0.235, 0.24, 0.245, 0.25, 0.255, 0.26, 0.265, 0.27, 0.275, 0.28, 0.285, 0.29, 0.295, 0.3 ],
+            "zcoordinate": [ -0.1, -0.095, -0.09, -0.085, -0.08, -0.075, -0.07, -0.065, -0.06, -0.055, -0.05, -0.045, -0.04, -0.035, -0.03, -0.025, -0.02, -0.015, -0.01, -0.005, 0, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.085, 0.09, 0.095, 0.1, 0.105, 0.11, 0.115, 0.12, 0.125, 0.13, 0.135, 0.14, 0.145, 0.15, 0.155, 0.16, 0.165, 0.17, 0.175, 0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.215, 0.22, 0.225, 0.23, 0.235, 0.24, 0.245, 0.25, 0.255, 0.26, 0.265, 0.27, 0.275, 0.28, 0.285, 0.29, 0.295, 0.3 ]
+        },
+        "Voxel": "./Media.dat"
+    },
+    "BoundaryCondition": {
+        "nx": "PML",
+        "ny": "PML",
+        "nz": "PML",
+        "px": "PML",
+        "py": "PML",
+        "pz": "PML"
+    },
+    "Material": [
+        {
+            "material_property": 0,
+            "Type_of_material": "Nondispersion",
+            "permittivity": 1,
+            "conductivity": 0,
+            "num_pol": 0,
+            "Name": "Free space"
+        },
+        {
+            "material_property": 1,
+            "Type_of_material": "Nondispersion",
+            "permittivity": 10,
+            "conductivity": 50,
+            "num_pol": 0,
+            "Name": "Ai"
+        },
+        {
+            "material_property": 2,
+            "Type_of_material": "Nondispersion",
+            "num_pol": 0,
+            "permittivity": 2.35,
+            "conductivity": 10,
+            "Name": "PDMS"
+        },
+        {
+            "material_property": 3,
+            "Type_of_material": "Nondispersion",
+            "num_pol": 0,
+            "permittivity": 2.3,
+            "conductivity": 0,
+            "Name": "SiO2"
+        }
+    ],
+    "SIMULATION_ENVIORONMENT": {
+        "SOURCE": {
+            "f0": 3.0E+8,
+            "BW": 0,
+            "TypeName": "HYBRID MOM TFSF",
+            "PulseName": "HARMONIC",
+            "Period": 4,
+            "ds": 0.005,
+            "sourcefile": [
+                {
+                    "f00":  3.0E+8,
+                    "plane1_Ey": "Plane1_Ey.dat",
+                    "plane1_Ez": "Plane1_Ez.dat",
+                    "plane3_Ey": "Plane3_Ey.dat",
+                    "plane3_Ez": "Plane3_Ez.dat",
+                    "plane2_Ex": "Plane2_Ex.dat",
+                    "plane2_Ez": "Plane2_Ez.dat",
+                    "plane4_Ex": "Plane4_Ex.dat",
+                    "plane4_Ez": "Plane4_Ez.dat",
+                    "plane5_Ex": "Plane5_Ex.dat",
+                    "plane5_Ey": "Plane5_Ey.dat",
+                    "plane6_Ex": "Plane6_Ex.dat",
+                    "plane6_Ey": "Plane6_Ey.dat",
+                    "plane1_Hy": "Plane1_Hy.dat",
+                    "plane1_Hz": "Plane1_Hz.dat",
+                    "plane3_Hy": "Plane3_Hy.dat",
+                    "plane3_Hz": "Plane3_Hz.dat",
+                    "plane2_Hx": "Plane2_Hx.dat",
+                    "plane2_Hz": "Plane2_Hz.dat",
+                    "plane4_Hx": "Plane4_Hx.dat",
+                    "plane4_Hz": "Plane4_Hz.dat",
+                    "plane5_Hx": "Plane5_Hx.dat",
+                    "plane5_Hy": "Plane5_Hy.dat",
+                    "plane6_Hx": "Plane6_Hx.dat",
+                    "plane6_Hy": "Plane6_Hy.dat",
+                    "no_source": 0
+                }
+            ]
+        },
+        "ObservationNumber": 2,
+        "Observation": [
+            { "Location": [ 0.02, 0.095, 0.095 ] },
+            { "Location": [ 0.07, 0.095, 0.095 ] }
+        ],
+        "DistributionNumber": 1,
+        "Distribution": [
+            {
+                "Plane": "XY",
+                "Location": 0.095
+            }
+        ],
+        "CompositionNumber": 1,
+        "Composition": [ { "Location": 0.07 } ]
+    }
+}

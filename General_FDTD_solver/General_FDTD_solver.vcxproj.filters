@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source_excitation">
+      <UniqueIdentifier>{64909b58-5511-468f-a46e-9645bad18fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EM_solver_main">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="FDTD_main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Post_processing">
+      <UniqueIdentifier>{f93c9847-2b7b-40f2-b59e-a09bd9523ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boundary_Conditions">
+      <UniqueIdentifier>{fbd40099-0e5c-41bf-acc1-308437d92f86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boundary_Conditions\PML">
+      <UniqueIdentifier>{74bfab86-778a-4497-b0a3-de4ce3508917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boundary_Conditions\PBC">
+      <UniqueIdentifier>{c3dc1798-78d5-4b9d-88f6-5a84e1ab2db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FDTD_main\General_contents">
+      <UniqueIdentifier>{dcaebd33-4ba8-42c5-a889-a979e84bfaa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source_excitation\TFSF %28planewave%29">
+      <UniqueIdentifier>{83cba8e1-e1cf-45c5-b2b5-0900775799ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source_excitation\Hybrid19">
+      <UniqueIdentifier>{3fef94b5-5c22-4200-8d5e-aa1709528704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source_excitation\Hybrid">
+      <UniqueIdentifier>{81fbc904-1c75-4e26-9096-e7d8a5f86517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FDTD_main\General_PBC_contents">
+      <UniqueIdentifier>{7c6031d5-0363-4421-8616-c46a2327d169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\FourierTransform">
+      <UniqueIdentifier>{2e005808-3328-4a5e-bd40-a4c6ce720827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Essential_output">
+      <UniqueIdentifier>{99fd26fb-7ecc-4b8a-be2d-25ffe2c48172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Additional_output">
+      <UniqueIdentifier>{21e39b48-481f-4927-9b98-410a576121a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Additional_output\Composit_fields">
+      <UniqueIdentifier>{461b0554-3556-402b-b1a0-af73887fc164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Additional_output\Optical_chirality">
+      <UniqueIdentifier>{47bc6ffe-e031-4b0a-96dc-7292276c2501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Essential_output\Observation_fields">
+      <UniqueIdentifier>{3269fa10-ca1b-42fc-ac88-d76aed876680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Essential_output\Field_distribution">
+      <UniqueIdentifier>{4d3a63ee-94c8-44cf-9427-8bff5843100b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Essential_output\Current_distribution">
+      <UniqueIdentifier>{32d1a9ed-3fd7-49a8-ad18-d09047ce7fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Additional_output\RCS %28NFFF%29">
+      <UniqueIdentifier>{e019836e-b9ad-4fbd-a908-ba7580a75976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Common_info">
+      <UniqueIdentifier>{c55270f4-d729-4f38-94aa-623a3b499e37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Additional_output\Optical_chirality\Envelop_Extract%28chirality%29">
+      <UniqueIdentifier>{0bc3b2db-02dd-4189-894d-733b9630328a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Post_processing\Additional_output\ChargeD">
+      <UniqueIdentifier>{a541fb46-3a44-457a-b713-43ab10cb7281}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TFunctions.h">
+      <Filter>EM_solver_main</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_2PML.h">
+      <Filter>Boundary_Conditions\PML</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_PML.h">
+      <Filter>Boundary_Conditions\PML</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_CFS_PML.h">
+      <Filter>Boundary_Conditions\PML</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_2PML_PBC.h">
+      <Filter>Boundary_Conditions\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_PBC_Boundary_normal.h">
+      <Filter>Boundary_Conditions\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="TSource_Excitation.h">
+      <Filter>Source_excitation</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTDparameters.h">
+      <Filter>FDTD_main\General_contents</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_GenericAlgorithm.h">
+      <Filter>FDTD_main\General_contents</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_YeeAlgorithm.h">
+      <Filter>FDTD_main\General_contents</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_Hybrid_TFSF.h">
+      <Filter>Source_excitation\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_Hybrid_mod_with_MOM.h">
+      <Filter>Source_excitation\Hybrid19</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_Boundary_TFSF.h">
+      <Filter>Source_excitation\TFSF %28planewave%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FDTD_Boundary_Condition.h">
+      <Filter>Boundary_Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_PBC_Screwed.h">
+      <Filter>Boundary_Conditions\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="FDTD_Terminal.h">
+      <Filter>FDTD_main</Filter>
+    </ClInclude>
+    <ClInclude Include="TFDTD_Generic_PBC.h">
+      <Filter>FDTD_main\General_PBC_contents</Filter>
+    </ClInclude>
+    <ClInclude Include="TFourierTransform.h">
+      <Filter>Post_processing\FourierTransform</Filter>
+    </ClInclude>
+    <ClInclude Include="Toptical_chirality.h">
+      <Filter>Post_processing\Additional_output\Optical_chirality</Filter>
+    </ClInclude>
+    <ClInclude Include="TSaveCurrentDistribution.h">
+      <Filter>Post_processing\Essential_output\Current_distribution</Filter>
+    </ClInclude>
+    <ClInclude Include="TPostprocessing.h">
+      <Filter>Post_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="TSaveObservation.h">
+      <Filter>Post_processing\Essential_output\Observation_fields</Filter>
+    </ClInclude>
+    <ClInclude Include="TSaveDistribution.h">
+      <Filter>Post_processing\Essential_output\Field_distribution</Filter>
+    </ClInclude>
+    <ClInclude Include="TSaveComposit.h">
+      <Filter>Post_processing\Additional_output\Composit_fields</Filter>
+    </ClInclude>
+    <ClInclude Include="TSaveFDTD_P_pros_Comm.h">
+      <Filter>Post_processing\Common_info</Filter>
+    </ClInclude>
+    <ClInclude Include="TEnvelop_Extract.h">
+      <Filter>Post_processing\Additional_output\Optical_chirality\Envelop_Extract%28chirality%29</Filter>
+    </ClInclude>
+    <ClInclude Include="TChargeDensity.h">
+      <Filter>Post_processing\Additional_output\ChargeD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TFDTD_PML.cpp">
+      <Filter>Boundary_Conditions\PML</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_CFS_PML.cpp">
+      <Filter>Boundary_Conditions\PML</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_2PML.cpp">
+      <Filter>Boundary_Conditions\PML</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_2PML_PBC.cpp">
+      <Filter>Boundary_Conditions\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_PBC_Boundary_normal.cpp">
+      <Filter>Boundary_Conditions\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="TSource_Excitation.cpp">
+      <Filter>Source_excitation</Filter>
+    </ClCompile>
+    <ClCompile Include="Tmain.cpp">
+      <Filter>EM_solver_main</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_GenericAlgorithm.cpp">
+      <Filter>FDTD_main\General_contents</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_YeeAlgorithm.cpp">
+      <Filter>FDTD_main\General_contents</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTDparameters.cpp">
+      <Filter>FDTD_main\General_contents</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_Hybrid_TFSF.cpp">
+      <Filter>Source_excitation\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_Hybrid_mod_with_MOM.cpp">
+      <Filter>Source_excitation\Hybrid19</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_Boundary_TFSF.cpp">
+      <Filter>Source_excitation\TFSF %28planewave%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FDTD_Boundary_Condition.cpp">
+      <Filter>Boundary_Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_PBC_Screwed.cpp">
+      <Filter>Boundary_Conditions\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="TFDTD_Generic_PBC.cpp">
+      <Filter>FDTD_main\General_PBC_contents</Filter>
+    </ClCompile>
+    <ClCompile Include="FDTD_Terminal.cpp">
+      <Filter>FDTD_main</Filter>
+    </ClCompile>
+    <ClCompile Include="TFourierTransform.cpp">
+      <Filter>Post_processing\FourierTransform</Filter>
+    </ClCompile>
+    <ClCompile Include="Toptical_chirality.cpp">
+      <Filter>Post_processing\Additional_output\Optical_chirality</Filter>
+    </ClCompile>
+    <ClCompile Include="TSaveCurrentDistribution.cpp">
+      <Filter>Post_processing\Essential_output\Current_distribution</Filter>
+    </ClCompile>
+    <ClCompile Include="TPostprocessing.cpp">
+      <Filter>Post_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="TSaveObservation.cpp">
+      <Filter>Post_processing\Essential_output\Observation_fields</Filter>
+    </ClCompile>
+    <ClCompile Include="TSaveDistribution.cpp">
+      <Filter>Post_processing\Essential_output\Field_distribution</Filter>
+    </ClCompile>
+    <ClCompile Include="TSaveComposit.cpp">
+      <Filter>Post_processing\Additional_output\Composit_fields</Filter>
+    </ClCompile>
+    <ClCompile Include="TSaveFDTD_P_pros_Comm.cpp">
+      <Filter>Post_processing\Common_info</Filter>
+    </ClCompile>
+    <ClCompile Include="TEnvelop_Extract.cpp">
+      <Filter>Post_processing\Additional_output\Optical_chirality\Envelop_Extract%28chirality%29</Filter>
+    </ClCompile>
+    <ClCompile Include="TChargeDensity.cpp">
+      <Filter>Post_processing\Additional_output\ChargeD</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
