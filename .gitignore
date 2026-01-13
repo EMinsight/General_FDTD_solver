@@ -1,0 +1,88 @@
+# ===== Visual Studio / Build =====
+.vs/
+x64/
+x86/
+Debug/
+Release/
+*.vcxproj.user
+
+# ===== CMake / build =====
+build/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ===== Binary / Libraries =====
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+Debug/
+Release/
+x64/
+x86/
+out/
+bin/
+obj/
+*.obj
+*.pdb
+*.ilk
+*.pch
+*.idb
+*.tlog
+*.log
+
+# CMake / Ninja (있으면)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.ninja
+build/
+
+# Windows / temp
+Thumbs.db
+.DS_Store
+*.tmp
+
+.vs/
+x64/
+General_*/
+
+# simulation results
+result/
+*.dat
+*.txt
+!Media.dat
+!Inc_Apply_to_*.txt
+
+# Build artifacts / binaries
+
+*.exe
+*.dll
+*.lib
+*.pdb
+
+*.obj
+
+# ===== FDTD result / field data =====
+*.dat
+result/
+debug*.txt
+
+# ===== OS =====
+Thumbs.db
+.DS_Store
+
+*.ipch
+
+# (옵션) Visual Studio intermediate
+*.obj
+*.ilk
+*.tlog
